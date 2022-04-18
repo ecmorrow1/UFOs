@@ -61,12 +61,9 @@ function filterTable() {
 
   // 9. Loop through all of the filters and keep any data that
   // matches the filter values
-  // filters.forEach((filterRow) => console.log(filterRow.keys()));
   for (const prop in filters) {
-    // if () {
-      console.log(`${prop}: ${filters[prop]}`);
+      // console.log(`${prop}: ${filters[prop]}`);
       filteredData = filteredData.filter(row => row[prop] === filters[prop]);
-    // }
   }
 
   // 10. Finally, rebuild the table using the filtered data
